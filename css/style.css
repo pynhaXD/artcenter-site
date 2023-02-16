@@ -1,0 +1,378 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Andika', sans-serif;
+}
+
+h1, h2{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    padding-left: 0;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: none;
+}
+
+.awards__title,
+.works__title,
+.teacher__title{
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 25px 0 25px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    letter-spacing: 1px;
+}
+
+
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #3b3e44;
+    box-shadow: 0 -5px 10px 30px rgb(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 20px 0;
+}
+
+.logo__img{
+    height: 100px;
+    width: 100px;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__item{
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.item-1:hover{
+    border: none;
+    background-color: rgb(255, 90, 90);
+    box-shadow: 0px 0px 80px 6px rgba(255, 90, 90, 1);
+}
+
+.item-2:hover{
+    border: none;
+    background-color: rgb(173, 216, 230);
+    box-shadow: 0px 0px 80px 6px rgba(173, 216, 230, 1);
+}
+
+.item-3:hover{
+    border: none;
+    background-color: rgb(255, 205, 87);
+    box-shadow: 0px 0px 80px 6px rgba(255, 205, 87, 1);
+}
+
+.item-4 ,.field__button:hover{
+    border: none;
+    background-color: rgb(153, 255, 153);
+    box-shadow: 0px 0px 80px 6px rgba(153, 255, 153, 1);
+}
+
+.menu__item + .menu__item{
+    margin-left: 50px;
+}
+
+.about{
+    background-color: #383a3e;
+}
+
+.about__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.about__img{
+    border-radius: 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.about__img:hover{
+    transform: scale(1.1);
+}
+
+.about__img:not(:hover){
+    transform: scale(1);
+}
+
+.about__title{
+    border-bottom: 2px solid #fff;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color:rgb(255, 123, 0);
+}
+
+.about__text{
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    
+}
+
+.awards{
+    padding-top: 100px;
+    background-color: #383a3e;
+    padding-bottom: 150px;
+}
+
+.awards__title{
+    color: rgb(255, 90, 90);
+}
+
+.awards__inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.awards__inner img{
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+    object-fit: fill;
+    margin-bottom: 40px;
+    
+    cursor: pointer;
+}
+
+.award__item{
+    transition: all .3s;
+}
+
+.award__item:hover{
+    transform: scale(1.1);
+}
+
+.award__item:not(:hover){
+    transform: scale(1);
+}
+
+.awards__text{
+    letter-spacing: 1px;
+    font-size: 16px;
+    max-width: 300px;
+}
+
+.works{
+    background-color: #383a3e;
+    padding-bottom: 100px;
+}
+
+.works__title{
+    color: rgb(173, 216, 230);
+}
+
+.works__inner{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    gap: 35px;
+}
+
+
+.picture__img{
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.picture__img:hover{
+    transform: scale(1.2);
+}
+
+.picture__img:not(:hover){
+    transform: scale(1);
+}
+
+.teacher{
+    background-color: #383a3e;
+    padding-bottom: 100px;
+}
+
+.teacher__title{
+    color: rgb(255, 205, 87);
+}
+
+.teacher__img{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.teacher__item{
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.teacher__item:hover{
+    transform: scale(1.1);
+}
+
+.teacher__item:not(:hover){
+    transform: scale(1);
+}
+
+.teacher__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher__list{
+    margin-top: 15px;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.teacher__descr{
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.descr__span{
+    font-size: 16px;
+    color:rgb(255, 123, 0);
+    font-weight: bold;
+}
+
+.name{
+    color: #fff;
+}
+
+.note{
+    background-color: #383a3e;
+    padding-bottom: 100px;
+}
+
+.form__field{
+    border-radius: 10px;
+    padding: 75px;
+    text-align: center;
+}
+
+.form__legend{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(153, 255, 153);
+    padding: 0 20px;
+    letter-spacing: 1px;
+}
+
+.input__inner{
+    display: flex;
+    justify-content: center ;
+}
+
+.input__item{
+    background-color: #383a3e;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    width: 300px;
+    margin-bottom: 100px;
+}
+
+.input__item:first-child{
+    margin-right: 20px;
+}
+
+.input__item::placeholder{
+    color: #fff;
+    opacity: .3;
+}
+
+.field__button{
+    background-color: #383a3e;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.footer{
+    background-color: #383a3e;
+    border-top: 1px solid #fff;
+}
+
+.footer__info{
+    padding: 25px 0 25px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__info img{
+    height: 50px;
+    width: 50px;
+}
+/* https://hudschool.com/priepodavatieli */
