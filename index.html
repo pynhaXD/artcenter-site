@@ -18,10 +18,10 @@
                 <a class="logo" href="#"><img class="logo__img"src="images/logo.png" alt="logo"></a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item item-1">Достижения</li>
-                        <li class="menu__item item-2">Наши работы</li>
-                        <li class="menu__item item-3">Педагоги</li>
-                        <li class="menu__item item-4">Запись</li>
+                        <li class="menu__item"><a class="menu__link item-1" href="#achive">Достижения</a></li>
+                        <li class="menu__item"><a class="menu__link item-2" href="#works">Наши работы</a></li>
+                        <li class="menu__item"><a class="menu__link item-3" href="#teachers">Педагоги</a></li>
+                        <li class="menu__item"><a class="menu__link item-4" href="#note">Запись</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,8 +40,8 @@
     </section>
     <section class="awards">
         <div class="container">
-            <h2 class="awards__title">Наши достижения</h2>
-            <div class="awards__inner">
+            <h2 class="awards__title" id="achive">Наши достижения</h2>
+            <div class="awards__inner" >
                 <div class="award__item">
                     <img src="images/certificate_1.jpg" alt="certificate_1">
                     <p class="awards__text">Победа на всероссийской олипиаде среде школьников в 2015 году.</p>
@@ -59,8 +59,8 @@
     </section>
     <section class="works">
         <div class="container">
-            <h2 class="works__title">работы наших учеников</h2>
-            <div class="works__inner">
+            <h2 class="works__title" id="works">работы наших учеников</h2>
+            <div class="works__inner" >
                 <div class="works__item"><img class="picture__img" src="images/picture_1.jpg" alt="picture"></div>
                 <div class="works__item"><img class="picture__img" src="images/picture_2.jpg" alt="picture"></div>
                 <div class="works__item"><img class="picture__img" src="images/picture_3.jpg" alt="picture"></div>
@@ -74,15 +74,15 @@
     </section>
     <section class="teacher">
         <div class="container">
-            <h2 class="teacher__title">наши педагоги</h2>
+            <h2 class="teacher__title" id="teachers">наши педагоги</h2>
             <div class="teacher__inner">
                 <div class="teacher__item">
                     <img class="teacher__img" src="images/teacher_1.jpg" alt="teacher">
                     <ul class="teacher__list">
-                        <li class="teacher__descr"> <span class="descr__span name">Васильева Алёна Дмитриевна</span></li>
-                        <li class="teacher__descr"> <span class="descr__span">Должность:</span><br><p>преподаватель, оказывает преподавательские услуги по договору на платном отделении.</p></li>
-                        <li class="teacher__descr"> <span class="descr__span">Стаж педагогической работы:</span><br><p>9 лет.</p></li>
-                        <li class="teacher__descr"> <span class="descr__span">Преподаваемые дисциплины:</span><br><p>Рисунок, живопись, композиция, история искусств, графическая композиция.</p></li>
+                        <li class="teacher__descr"><span class="descr__span name">Васильева Алёна Дмитриевна</span></li>
+                        <li class="teacher__descr"><span class="descr__span">Должность:</span><br><p>преподаватель, оказывает преподавательские услуги по договору на платном отделении.</p></li>
+                        <li class="teacher__descr"><span class="descr__span">Стаж педагогической работы:</span><br><p>9 лет.</p></li>
+                        <li class="teacher__descr"><span class="descr__span">Преподаваемые дисциплины:</span><br><p>Рисунок, живопись, композиция, история искусств, графическая композиция.</p></li>
                     </ul>
                 </div>
                 <div class="teacher__item">
@@ -110,7 +110,7 @@
         <div class="container">
             <fieldset class="form__field">
                 <legend class="form__legend">Запись</legend>
-                <div class="input__inner">
+                <div class="input__inner" id="note">
                     <input class="input__item" type="text" placeholder="Имя">
                     <input class="input__item" type="tel" maxlength="11" placeholder="Телефон">
                 </div>

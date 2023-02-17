@@ -53,8 +53,6 @@ input{
     letter-spacing: 1px;
 }
 
-
-
 .container{
     max-width: 1120px;
     margin: 0 auto;
@@ -85,7 +83,7 @@ input{
     display: flex;
 }
 
-.menu__item{
+.menu__link{
     font-size: 14px;
     border: 1px solid #fff;
     border-radius: 10px;
@@ -114,7 +112,7 @@ input{
     box-shadow: 0px 0px 80px 6px rgba(255, 205, 87, 1);
 }
 
-.item-4 ,.field__button:hover{
+.item-4:hover ,.field__button:hover{
     border: none;
     background-color: rgb(153, 255, 153);
     box-shadow: 0px 0px 80px 6px rgba(153, 255, 153, 1);
@@ -359,8 +357,8 @@ input{
 }
 
 .footer{
-    background-color: #383a3e;
-    border-top: 1px solid #fff;
+    background-color: #3b3e44;
+    box-shadow: 0 5px 10px 30px rgb(0, 0, 0, 0.1);
 }
 
 .footer__info{
@@ -375,4 +373,3 @@ input{
     height: 50px;
     width: 50px;
 }
-/* https://hudschool.com/priepodavatieli */
