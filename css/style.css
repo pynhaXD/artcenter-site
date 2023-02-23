@@ -221,6 +221,7 @@ input{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 
@@ -229,13 +230,14 @@ input{
     height: 300px;
     width: 300px;
     object-fit: fill;
-    margin-bottom: 40px;
-    
+    margin-bottom: 30px;
     cursor: pointer;
 }
 
 .award__item{
     transition: all .3s;
+    margin-bottom: 10px;
+    padding: 0 30px 30px;
 }
 
 .award__item:hover{
@@ -306,6 +308,7 @@ input{
 .teacher__item{
     transition: all .3s;
     cursor: pointer;
+    padding: 0 30px 30px;
 }
 
 .teacher__item:hover{
@@ -318,7 +321,8 @@ input{
 
 .teacher__inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .teacher__list{
@@ -353,6 +357,7 @@ input{
     border-radius: 10px;
     padding: 75px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .form__legend{
@@ -367,7 +372,8 @@ input{
 
 .input__inner{
     display: flex;
-    justify-content: center ;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .input__item{
@@ -419,6 +425,48 @@ input{
 }
 
 
+
+@media(max-width: 1200px){
+    .about__inner{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+    .about__img{
+        margin-top: 50px;
+    }
+    .award__item{
+        pointer-events: none;
+    }
+    .awards__inner{
+        justify-content: center;
+    }
+    .works__inner{
+        grid-template-columns: repeat(2, 250px);
+    }
+    .picture__img{
+        pointer-events: none;
+    }
+    .teacher__item{
+        pointer-events: none;
+    }
+    .form__field{
+        max-width: 500px;
+        padding: 75px 20px;
+    }
+    .input__item:nth-of-type(1){
+        margin-right: 0;
+    }
+    .field__button:hover{
+        background-color: inherit;
+        box-shadow: none;
+        border: 1px solid #fff;
+    }
+    .field__button:active{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 
 @media (max-width: 900px){
     .header__inner{
@@ -484,11 +532,60 @@ input{
     }
 }
 
+@media(max-width: 680px){
+    .award__item{
+        margin: 0 0 30px;
+    }
+}
+
+@media(max-width: 600px){
+    .about__inner{
+        text-align: start;
+        margin: 0 20px;
+    }
+    .about__img{
+        display: none;
+    }
+    .works__inner{
+        grid-template-columns: 250px;
+
+    }
+    .picture_2,
+    .picture_4,
+    .picture_6,
+    .picture_8{
+        display: none;
+    }
+    .form__field{
+        border: none;
+    }
+    .input__inner{
+        justify-content: flex-start;
+
+    }
+    .input__item{
+        width: 100%;
+    }
+    .footer__info{
+        flex-direction: column;
+        gap: 30px
+    }
+}
+
 @media (max-width: 490px){
     .header__burger-btn{
         margin-top: 60px;
     }
     .logo{
         display: none;
+    }
+}
+
+@media(max-width: 360px){
+    .award__item img{
+        transform: scale(0.8);
+    }
+    .teacher__img{
+        transform: scale(0.8);
     }
 }
