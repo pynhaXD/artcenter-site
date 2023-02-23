@@ -1,5 +1,4 @@
 const anchors = document.querySelectorAll('a[href*="#"]')
-
 for (let anchor of anchors){
     anchor.addEventListener("click", function(event){
         event.preventDefault();
@@ -10,3 +9,8 @@ for (let anchor of anchors){
         })
     })
 }
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("burger").addEventListener("click", function(){
+        document.querySelector("header").classList.toggle("open")
+    })
+})
